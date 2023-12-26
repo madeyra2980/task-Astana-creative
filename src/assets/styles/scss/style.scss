@@ -1,0 +1,106 @@
+    $orange: #F17E4E;
+    $selected: #6B53F6;
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 1495px;
+        height: 100vh;
+        margin: 0 auto;
+        background-image: url('../../images/bgimage.svg');
+        background-repeat: no-repeat;
+        background-size: cover; 
+        position: relative;
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 20px;
+            left: 10%;
+            width: 1200px;
+            border-radius: 50px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 140%);
+            padding: 20px; 
+            box-sizing: border-box;
+
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: bold;
+                }
+            }
+            .items{
+                display: flex;
+                gap: 60px;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Inter', sans-serif;
+
+                    &:hover {
+                        color: $orange; /* Change the color on hover */
+                    }
+
+                }
+            }
+
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            
+            .languages {
+                select {
+                    background: url('../../images/Vector.svg') no-repeat right center;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    background-size: 16px; 
+                    border: none;
+                    padding-right: 20px; 
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .main-block{
+            background-color:aqua;
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            top: 210px;
+            left: 135px;
+
+            h1{
+                font-size: 50px;
+                color: white;
+            }
+            p{
+                width: 520px;
+                font-size: 20px;
+                color: white;
+            }
+            .sign-up{
+                width: 275px;
+                height: 64px;
+                border: none;
+                background-color: $orange ;
+                color: white;
+            }
+        }
+    }
+
